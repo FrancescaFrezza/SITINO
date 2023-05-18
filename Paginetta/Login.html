@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SITINO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="PaginettaBella.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+
+    <div class="container container-default-page login-page">
+        <div class="row justify-content-center ">
+            <div class="col-sm-12 col-lg-4 col-md-6">
+                <div class="card login-card-inpage">
+                    <div class="card-body">
+                        <h3 class="dashboard-box-title">Utente registrato</h3>
+                        <form action="/on/demandware.store/Sites-legamiIT-Site/it_IT/Account-Login?rurl=1" class="login" method="POST" name="login-form">
+    <div class="form-group required">
+        <label class="form-control-label" for="login-form-email">
+            E-mail
+        </label>
+        <input type="email" id="login-form-email" required="" aria-required="true" class="form-control required" aria-describedby="form-email-error" name="loginEmail" value="">
+        <div class="invalid-feedback" id="form-email-error"></div>
+    </div>
+
+    <div class="form-group required">
+        <label class="form-control-label" for="login-form-password">
+                Password
+        </label>        
+        <input type="password" id="login-form-password" required="" aria-required="true" class="form-control required" aria-describedby="form-password-error" name="loginPassword">
+        <div class="invalid-feedback" id="form-password-error"></div>
+    </div>
+
+    <div class="clearfix">
+        <div class="form-group custom-control custom-checkbox pull-left remember-me">
+            <input type="checkbox" class="custom-control-input" id="rememberMe" name="loginRememberMe" value="true">
+            <label class="custom-control-label" for="rememberMe">
+                Memorizza accesso
+            </label>
+        </div>
+
+        <div class="pull-right forgot-password text-right">
+            <a class="d-sm-none" href="/it_it/utente/reset-password/" title="password dimenticata?">
+                password dimenticata?
+            </a>
+
+            <a id="password-reset" class="hidden-xs-down" title="password dimenticata?" data-toggle="modal" href="/on/demandware.store/Sites-legamiIT-Site/it_IT/Account-PasswordResetDialogForm" data-target="#requestPasswordResetModal">
+                password dimenticata?
+            </a>
+        </div>
+    </div>
+
+    <input type="hidden" name="csrf_token" value="Lpz60XrfNIBmYa3ngaA5UBX9d4zM17iYRLoysCWXmtcCtLelRz-L9Xi6_NHn0LRNyJYRKBtRUrrSOGeXKV1xJCyTuzhKbxKZqa1WpNztkGVMMg4CY2fTGQa6_RY5PiwORjCoop26SK1Rx03hcqVgPu5aLTrJoh9ZSHDgWrlVv_6cniJDAeg=">	
+    <button type="submit" class="btn btn-block btn-primary">Accedi</button>
+    
+</form>
+
+
+                        <div class="modal fade" id="requestPasswordResetModal" tabindex="-1" role="dialog" aria-labelledby="requestPasswordResetModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title request-password-title">Hai dimenticato la password</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+
+            <div class="modal-body">
+                <form class="reset-password-form" action="/on/demandware.store/Sites-legamiIT-Site/it_IT/Account-PasswordResetDialogForm?mobile=" method="POST" name="email-form" id="email-form">
+    <div class="request-password-body">
+        <p>
+            Specifica l'indirizzo e-mail associato al tuo account per ricevere le istruzioni per reimpostare la password via e-mail.
+        </p>
+        <div class="form-group required">
+            <label class="form-control-label" for="reset-password-email">
+                E-mail
+            </label>
+            <input id="reset-password-email" type="email" class="form-control" name="loginEmail" aria-describedby="emailHelp" placeholder="E-mail">
+            <div class="invalid-feedback"></div>
+        </div>
+    </div>
+    <div class="send-email-btn">
+        <button type="submit" id="submitEmailButton" class="btn btn-primary btn-block">
+            Invia
+        </button>
+    </div>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <form action="" class="login-oauth" method="post" name="login-oauth-form">
+    
+</form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 col-md-6">
+            	<div class="card register-card-inpage">
+	            	<div class="card-body">
+                     <h3 class="dashboard-box-title">Utente non registrato</h3>
+	                	
+
+
+form action="/on/demandware.store/Sites-legamiIT-Site/it_IT/Account-SubmitRegistration?rurl=1" class="registration" method="POST" name="dwfrm_profile">
+
+    <div class="form-group
+        required">
+        <label class="form-control-label" for="registration-form-email">
+             E-mail
+        </label>
+        <input type="text" class="form-control" id="registration-form-email" data-missing-error="Campo obbligatorio." data-pattern-mismatch="Inserisci un indirizzo e-mail valido" data-range-error="Must be 50 characters or less." aria-describedby="form-email-error" name="dwfrm_profile_customer_email" required="" aria-required="true" value="" maxlength="50">
+        <div class="invalid-feedback" id="form-email-error"></div>
+    </div>
+    
+    <div class="form-group customerTypeGroup">
+		   	
+	
+	<div class="content-asset"><!-- dwMarker="content" dwContentID="b550c186fbe30abc6823402b59" -->
+		<label class="form-control-label" for="customerType">
+      Tipologia cliente
+   <i class="help-icon-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Registrati come Privato o come Azienda-Libero professionista. La scelta non potrà più essere modificata.">?
+    </i>
+</label>
+	</div> <!-- End content-asset -->
+
+
+
+		    <div class="col-md-12 pl0 pr0">
+		    <div class="form-check form-check-inline">
+		   	<input class="form-check-input-register" checked="" type="radio" value="1" aria-required="true" id="registration-form-isPrivate" name="dwfrm_profile_customer_customerType">
+			<label class="form-check-label" for="registration-form-isPrivate">
+				Privato
+			</label>
+			</div>
+            <div class="form-check form-check-inline">	
+                <input class="form-check-input-register" type="radio" value="2" aria-required="true" id="registration-form-isCompany" name="dwfrm_profile_customer_customerType">
+                <label class="form-check-label" for="registration-form-isCompany">
+                    Società/Libero professionista
+                </label>	
+            </div> 	
+		</div>
+	    <div class="invalid-feedback"></div>
+	</div>
+
+    <hr class="default-separator">
+    	
+    	<div class="isCompanyChecked">
+    	
+    	</div>
+    
+        <div class="form-group
+            required">
+            <label class="form-control-label" for="registration-form-fname">
+                Nome
+            </label>
+            <input type="text" class="form-control" id="registration-form-fname" data-missing-error="Campo obbligatorio." data-range-error="Must be 50 characters or less." aria-describedby="form-fname-error" name="dwfrm_profile_customer_firstname" required="" aria-required="true" value="" maxlength="50">
+            <div class="invalid-feedback" id="form-fname-error"></div>
+        </div>
+
+        <div class="form-group
+            required">
+            <label class="form-control-label" for="registration-form-lname">
+                Cognome
+            </label>
+            <input type="text" class="form-control" id="registration-form-lname" data-missing-error="Campo obbligatorio." data-range-error="Must be 50 characters or less." aria-describedby="form-lname-error" name="dwfrm_profile_customer_lastname" required="" aria-required="true" value="" maxlength="50">
+            <div class="invalid-feedback" id="form-lname-error"></div>
+        </div>
+    
+    </form></div>
+
+
+<div class="form-group custom-control custom-checkbox
+	required">
+        <input type="checkbox" class="custom-control-input" id="consent-privacy-flag" name="dwfrm_profile_customer_flagPrivacy" required="" aria-required="true" value="true">
+        <label class="custom-control-label optin-privacy-label" for="consent-privacy-flag">
+            
+            
+	
+	<div class="content-asset"><!-- dwMarker="content" dwContentID="a0e3aee3945e72b8526e782d8e" -->
+		<span>
+    Creando un account, accetti le 
+    <a href="https://www.legami.com/it_it/page-terms-and-conditions.html">Condizioni generali di vendita</a> e dichiari di aver preso visione dell’
+    <a href="https://www.legami.com/it_it/page-privacy-policy.html">informativa sulla Privacy</a> di Legami.
+</span>
+	</div> <!-- End content-asset -->
+
+
+
+        </label>
+    </div>
+
+
+   
+
+    <input type="hidden" name="csrf_token" value="Lpz60XrfNIBmYa3ngaA5UBX9d4zM17iYRLoysCWXmtcCtLelRz-L9Xi6_NHn0LRNyJYRKBtRUrrSOGeXKV1xJCyTuzhKbxKZqa1WpNztkGVMMg4CY2fTGQa6_RY5PiwORjCoop26SK1Rx03hcqVgPu5aLTrJoh9ZSHDgWrlVv_6cniJDAeg=">
+
+    <button type="submit" class="btn btn-block btn-primary">
+        Crea account
+    </button> 
+
+
+<div hidden="" id="companyField" class="form-group">
+       <label class="form-control-label" for="registration-form-companyName">
+           Ragione Sociale
+       </label>
+       <input type="text" class="form-control" id="registration-form-companyName" data-missing-error="Campo obbligatorio." data-range-error="Must be 50 characters or less." aria-describedby="form-fname-error" name="dwfrm_profile_customer_companyName" required="" aria-required="true" value="" maxlength="2147483647">
+       <div class="invalid-feedback" id="form-companyname-error">Campo obbligatorio.</div>
+   </div>
+
+	            	</div>
+            	</div>
+            </div>
+            
+        </div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
